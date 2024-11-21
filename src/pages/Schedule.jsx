@@ -1,9 +1,9 @@
 import React from 'react'
 
-const RedeemPage = () => {
+const Schedule = () => {
   return (
     <div>
-        <h1>Redeem</h1>
+        <h1>schedule</h1>
     </div>
   )
 }
