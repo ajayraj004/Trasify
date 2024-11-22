@@ -1,0 +1,98 @@
+/* Overlay for the popup */
+.register-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+  }
+  
+  /* Register form styling (as a modal) */
+  .register {
+    background: rgba(37, 117, 252, 0.9); /* Bluish transparent background */
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid #1b5bd0; /* Dark blue border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align content in the center */
+  }
+  
+  /* Close button for the popup */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff; /* White for better contrast */
+    transition: color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    color: #d1e8ff; /* Lighter blue on hover */
+  }
+  
+  /* Form inputs */
+  .register form {
+    width: 100%; /* Ensure inputs and button are full width */
+    display: flex;
+    flex-direction: column; /* Stack inputs and button vertically */
+    align-items: center; /* Center align the inputs and button */
+  }
+  
+  .register form input {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    border: 2px solid #1b5bd0; /* Dark blue border */
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    width: 80%; /* Keep inputs narrower than the modal width */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .register form input:focus {
+    border-color: #2575fc; /* Brighter blue on focus */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly lighter background */
+    outline: none;
+  }
+  
+  /* Submit button */
+  .register form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #1b5bd0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 80%; /* Match the width of input fields */
+  }
+  
+  .register form button:hover {
+     /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Error message styling */
+  .register p {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ff4d4d; /* Bright red for errors */
+  }
